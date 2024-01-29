@@ -1,0 +1,29 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    defaultConfig {
+        applicationId "com.cloudpos.newisofingerprintdemo"
+        minSdkVersion 23
+        targetSdkVersion 23
+        versionCode 103
+        versionName "1.0.3"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'   // aar目录
+        }
+    }
+}
+
+dependencies {
+    implementation (name: 'cloudpossdkV1.6.1.5_Standard', ext: 'aar')
+    implementation 'com.android.support:appcompat-v7:23.4.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+}
