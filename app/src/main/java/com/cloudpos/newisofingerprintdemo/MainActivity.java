@@ -390,7 +390,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
 
                 if (matchResult > 80) {
-                    handler.obtainMessage(SHOW_SUCCESS_MESSAGE, mContext.getString(R.string.MatchSuccess) + matchResult + ",fingerPrint index = " + index).sendToTarget();
+                    handler.obtainMessage(SHOW_SUCCESS_MESSAGE, mContext.getString(R.string.MatchSuccessScore) + matchResult + ", fingerPrint index = " + index).sendToTarget();
                 } else {
                     handler.obtainMessage(SHOW_FAIL_MESSAGE, mContext.getString(R.string.MatchFailed)).sendToTarget();
                 }
@@ -410,7 +410,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         try {
             userID++;
             fingerprintDevice.enroll(userID, timeout);
-            handler.obtainMessage(SHOW_SUCCESS_MESSAGE, getStr(R.string.SUCCESSINFO) + ",id=" + userID).sendToTarget();
+            handler.obtainMessage(SHOW_SUCCESS_MESSAGE, getStr(R.string.SUCCESSINFO) + ", id=" + userID).sendToTarget();
         } catch (DeviceException e) {
             e.printStackTrace();
             handler.obtainMessage(SHOW_FAIL_MESSAGE, getStr(R.string.FAILEDINFO)).sendToTarget();
@@ -421,7 +421,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void verifyAll() {
         try {
             int result = fingerprintDevice.verifyAll(timeout);
-            handler.obtainMessage(SHOW_SUCCESS_MESSAGE, getStr(R.string.MatchSuccess) + ",id=" + result).sendToTarget();
+            handler.obtainMessage(SHOW_SUCCESS_MESSAGE, getStr(R.string.MatchSuccess) + ", id=" + result).sendToTarget();
         } catch (DeviceException e) {
             e.printStackTrace();
             handler.obtainMessage(SHOW_FAIL_MESSAGE, getStr(R.string.MatchFailed)).sendToTarget();
