@@ -13,8 +13,8 @@
     <string name="MatchSuccess">Match success!</string>
     <string name="MatchFailed">Match failed!</string>
     <string name="Cleared">Clear success</string>
-    <string name="ClearedFail">Clear fail!</string>
-    <string name="entry">Successful entry</string>
+    <string name="ClearedFail">Clear failed!</string>
+    <string name="entry">Entry success</string>
     <string name="entrybutton">Fingerprint entry</string>
     <string name="matchbutton">Fingerprint matching</string>
     <string name="clearlogbutton">Clear log</string>
