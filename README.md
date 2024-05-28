@@ -1,7 +1,7 @@
 # ISO Fingerprint Demo using CloudPOS SDK AAR
 
 ## Overview
-This demonstration provides practical insights into managing ISO fingerprint operations using the CloudPOS SDK AAR. It's designed to guide both developers and users through various fingerprint-related functionalities in smart POS systems.
+This demonstration provides practical insights into managing ISO fingerprint operations using the CloudPOS SDK AAR. It is designed to guide both developers and users through various fingerprint-related functionalities in smart POS systems.
 
 ## Features
 
@@ -16,6 +16,3 @@ This demonstration provides practical insights into managing ISO fingerprint ope
 
 ### 4. Fingerprint Deletion
 - **Delete a Fingerprint**: Guidelines on how to remove a fingerprint securely from the system.
-
-## Getting Started
-Follow these steps to implement the ISO Fingerprint functionalities in your smart POS application using the CloudPOS SDK AAR.
